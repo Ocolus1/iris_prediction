@@ -8,4 +8,4 @@ class PredResults(models.Model):
     classification = models.CharField(max_length=30)
 
     def _str__(self):
-        return self.classification
+        return f"The Iris flower is a {self.classification}"
